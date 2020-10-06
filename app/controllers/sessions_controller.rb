@@ -20,6 +20,7 @@ class SessionsController < ApplicationController
   end
 
   private
+  # Holy Non-rest
 
   def flash_login(user)
     flash[:success] = "Logged in as #{user.first_name}"

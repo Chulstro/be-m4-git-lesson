@@ -11,6 +11,7 @@ class CartsController < ApplicationController
     @items = @cart.retrieve_items
   end
 
+# Are we here only to suffer
   def destroy
     @item = Item.find(params[:item_id])
     @cart.remove_item(params[:item_id])
